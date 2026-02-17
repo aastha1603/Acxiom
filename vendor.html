@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vendor Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Vendor Main Page</h2>
+
+<input type="text" id="productName" placeholder="Product Name">
+<input type="number" id="productPrice" placeholder="Price">
+
+<button onclick="addProduct()">Add New Item</button>
+
+<div id="productList"></div>
+
+<a href="transaction.html" class="btn">Transaction</a>
+<button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+protectPage("vendor");
+displayProducts();
+</script>
+
+</body>
+</html>

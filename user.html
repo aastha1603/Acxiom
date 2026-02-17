@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>User Portal</h2>
+
+<div id="productList"></div>
+
+<a href="cart.html" class="btn">Cart</a>
+<a href="guest-list.html" class="btn">Guest List</a>
+<a href="order-status.html" class="btn">Order Status</a>
+
+<button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+protectPage("user");
+displayProducts(true);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Success</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Payment Successful</h2>
+<h3 id="finalTotal"></h3>
+
+<a href="user.html" class="btn">Back to Home</a>
+</div>
+
+<script>
+document.getElementById("finalTotal").innerText =
+"Total Paid: ₹" + localStorage.getItem("finalTotal");
+</script>
+
+</body>
+</html>

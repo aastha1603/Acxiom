@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Payment</h2>
+
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="emailCheck" placeholder="Email">
+
+<select id="paymentMethod">
+<option>Cash</option>
+<option>UPI</option>
+</select>
+
+<button onclick="placeOrder()">Pay Now</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+protectPage("user");
+</script>
+
+</body>
+</html>

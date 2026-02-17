@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maintenance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Maintenance Menu (Admin Only)</h2>
+
+<h3>Membership</h3>
+<input type="text" id="vendorName" placeholder="Vendor Name">
+
+<label><input type="radio" name="duration" value="6 Months" checked>6 Months</label>
+<label><input type="radio" name="duration" value="1 Year">1 Year</label>
+<label><input type="radio" name="duration" value="2 Years">2 Years</label>
+
+<button onclick="addMembership()">Add</button>
+<button onclick="updateMembership()">Update</button>
+
+<hr>
+
+<h3>User Management</h3>
+<input type="email" id="newUserEmail" placeholder="User Email">
+<input type="password" id="newUserPassword" placeholder="Password">
+<button onclick="addUser()">Add User</button>
+<div id="userList"></div>
+
+<hr>
+
+<h3>Vendor Management</h3>
+<input type="email" id="newVendorEmail" placeholder="Vendor Email">
+<input type="password" id="newVendorPassword" placeholder="Password">
+<button onclick="addVendor()">Add Vendor</button>
+<div id="vendorList"></div>
+
+<button onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+protectPage("admin");
+displayUsers();
+displayVendors();
+</script>
+
+</body>
+</html>
